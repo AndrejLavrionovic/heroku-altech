@@ -1,0 +1,24 @@
+@CHARSET "utf-8";
+
+#errorDiv{
+	display: block;
+	margin: 80px auto 0 auto;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	padding: 10px;
+	width: 400px;
+	background-color: #DCF4DC;
+}
+
+#hError{
+	font: bold 16px arial;
+	color: red;
+	margin-bottom: 10px;
+}
+
+#ErrorNote{
+	
+	font: normal 12px calibri;
+	color: #202020;
+	padding: 5px 0 10px 0;
+}

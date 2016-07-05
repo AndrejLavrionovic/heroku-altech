@@ -1,0 +1,190 @@
+@CHARSET "utf-8";
+
+#btnfindUser{
+	display: inline-block;
+	width: 100px;
+	background-color: #7A90A0;
+	color: #EFE6E6;
+	border: 1px solid #303030;
+	margin: 20px 0 5px 0;
+	padding: 0px;
+	height: 23px;
+}
+
+
+/*******STYLES FOR USER TABLE*********/
+
+#getUsers{
+	margin-top: 40px;
+	border: 0px solid #303030;
+}
+
+.tblHeader{
+	font: normal 12px verdana;
+	color: #606060;
+	text-align: left;
+}
+.tblHeader tr{
+	background-color: #C9E4FF;
+}
+.tblBody{
+	font: normal 12px calibri;
+	color: #303030;
+	text-align: left;
+}
+.tblBody tr{
+	background-color: #EFFFF3;
+}
+
+.col1{
+	width: 80px;
+}
+.col2{
+	width: 100px;
+}
+.col3{
+	width: 100px;
+}
+.col4{
+	width: 150px;
+}
+.col5{
+}
+
+.userControl{
+	width: 40px;
+	text-align: center;
+}
+
+#divoptions{
+	height: 22px;
+	lenght: 300px;
+	border: 0px solid black;
+}
+
+#btnUser{
+	height: 20px;
+	width: 100px;
+	font: normal 13px calibri;
+	text-align: center;
+	display: inline-block;
+}
+
+a.btnlink:link, a.btnlink:visited{
+	border: 1px solid orange;
+	background-color: #d0ccd0;
+	color: #000040;
+}
+
+a.btnlink:hover{
+	border: 1px solid orange;
+	background-color: #9a9a9a;
+	color: #cff3fe;
+}
+
+a.btnlink:active{
+	border: 1px solid #ed380c;
+	background-color: #9a9a9a;
+	color: #cff3fe;
+}
+
+a .imgusermanagement{
+	opacity: 0.3;
+}
+a .imgusermanagement:hover{
+	opacity: 1;
+}
+
+#msg{
+	width: 560px;
+	height: 30px;
+	border: 1px solid green;
+	margin: 10px auto;
+	opacity: 0.9;
+	padding: 5px 10px;
+	font: bold 18px calibri;
+	color: green;
+}
+
+#error{
+	width: 560px;
+	height: 30px;
+	border: 1px solid red;
+	margin: 10px auto;
+	opacity: 0.9;
+	padding: 5px 10px;
+	font: bold 18px calibri;
+	color: red;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::SEARCH PARAMETERS TABLE:::*/
+.tblSearchParams{
+	margin-top: 30px;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::SEARCH PARAMETERS TABLE HEADER:::*/
+.tblSearchParams tr td label{
+	font: normal 13px arial;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::SEARCH PARAMETERS BLOCK:::*/
+#divSearchParams{
+	border: 1px solid #e3e3e3;
+	padding: 0 0 10px 0;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::SEARCH PARAMETERS HEADER:::*/
+#hdrSearchParams{
+	height: 26px;
+	background-color: #e3e3e3;
+	font: bold 12px verdana;
+	color: #10003D;
+	padding: 4px 0 0 10px;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::SEARCH PARAMETERS SECTION:::*/
+#sctSearchParams{
+	margin: 10px;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::SEARCH PARAMETERS TEXT FIELDS:::*/
+.txtSearch{
+	width: 120px;
+	padding: 0 5px;
+	font: normal 14px calibri;
+	color: #404040;
+	margin-right: 6px;
+	height: 20px;
+}
+
+#txtEmpnum{
+	width: 100px;
+}
+
+#rowSearchInputs td:first-child{
+	width: 100px;
+}
+
+hr{
+	margin: 20px auto;
+	height: 1px;
+	border: 0px;
+	background-color: #e4e4e4;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::SEARCH EMAIL LABEL AND INPUT:::*/
+#lblEmail{
+	display: inline-block;
+	width: 106px;
+	font: normal 13px arial;
+	margin: 0 0 30px 0;
+}
+
+#txtEmail{
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	padding: 0 5px;
+	font: normal 14px calibri;
+	color: #404040;
+}

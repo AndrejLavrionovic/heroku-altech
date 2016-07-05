@@ -1,0 +1,30 @@
+@CHARSET "utf-8";
+
+#homePageText{
+	border: 0px solid gray;
+	width: 700px;
+	margin: 40px 0px;
+}
+
+#homePageText p{
+	font: normal 14px verdana;
+	color: #303030;
+	display: block;
+	padding-left: 10px;
+	border-left: 3px solid #909090;
+}
+
+#frmDiv{
+	margin: 0 0 40px 0;
+}
+
+#notes{
+	margin: 0 0 10px 0;
+}
+
+#botomDiv{
+	width: 640px;
+	text-align: right;
+	font: normal 16 calibri;
+	color: #606060;
+}

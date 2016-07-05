@@ -1,0 +1,64 @@
+@CHARSET "utf-8";
+
+body{
+	
+}
+#login{
+	display: block;
+	margin: 80px auto 0 auto;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	padding: 10px;
+	width: 400px;
+	background-color: #DCF4DC;
+}
+
+#hLog{
+	font: bold 16px arial;
+	color: #303030;
+	margin-bottom: 10px;
+}
+
+#logNotes{
+	font: normal 12px calibri;
+	color: #202020;
+	padding: 5px 0 10px 0;
+}
+
+.lblLog{
+	display: inline-block;
+	width: 120px;
+	font: normal 14px calibri;
+	margin: 0 0 5px 0;
+}
+
+.txtLog{
+	border: 1px solod #2D2C2C;
+	height: 20px;
+	width: 200px;
+	padding: 0 5px;
+	color: #9E6060;
+	margin: 0 0 5px 0;
+	font: bolder 13px verdana;
+}
+
+#logBtns{
+	margin-top: 20px;
+	border: 0px solid black;
+	width: 336px;
+	text-align: right;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height: 30px;
+	color: #120044;
+	font: bolder 14px verdana;
+	border: 1px solid #124E44;
+}
+
+#loginError{
+	margin-top: 20px;
+	font:normal 14px verdana;
+	color: red;
+}

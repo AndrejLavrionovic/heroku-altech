@@ -1,0 +1,26 @@
+@CHARSET "utf-8";
+
+table{
+	border-collapse: collapse;
+}
+
+table th{
+	text-align: left;
+	height: 30px;
+	font-family: verdana;
+}
+tbody td{
+	border-bottom: 1px solid #606060;
+	font: normal 14px calibri;
+	color: #000B49;
+}
+
+.col1{
+	width: 110px;
+}
+.col2{
+	width: 110px;
+}
+.col3{
+	width: *;
+}

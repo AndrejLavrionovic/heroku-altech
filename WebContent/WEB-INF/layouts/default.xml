@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+       
+<tiles-definitions>
+	
+	<definition name="header.date" template="/WEB-INF/tiles/headerDefault.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="date" value="/WEB-INF/tiles/datebar.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="usersdefault" template="/WEB-INF/tiles/usersdefault.jsp">
+		<put-attribute name="usersaside" value="/WEB-INF/tiles/usersMainAside.jsp"></put-attribute>
+		<put-attribute name="userssection" value="/WEB-INF/tiles/users.jsp"></put-attribute>
+	</definition>
+
+	<definition name="users.content" extends="usersdefault"></definition>
+	
+	<definition name="create.content" extends="usersdefault">
+		<put-attribute name="userssection" value="/WEB-INF/tiles/create.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="edituserform.content" extends="usersdefault">
+		<put-attribute name="userssection" value="/WEB-INF/tiles/edituserform.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="usercreated.content" extends="usersdefault">
+		<put-attribute name="userssection" value="/WEB-INF/tiles/usercreated.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userupdated.content" extends="usersdefault">
+		<put-attribute name="userssection" value="/WEB-INF/tiles/userupdated.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userinfo.content" extends="usersdefault">
+		<put-attribute name="userssection" value="/WEB-INF/tiles/userinfo.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="showmsgs.content" extends="usersdefault">
+		<put-attribute name="userssection" value="/WEB-INF/tiles/showmsgs.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="altech.base" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="AMS Home page."></put-attribute>
+		<put-attribute name="header" value="header.date"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/normalize.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="home" extends="altech.base">
+		<put-attribute name="title" value="AMS Home page."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/home.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="clock" extends="altech.base">
+		<put-attribute name="title" value="AMS Clock In/Out."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/clock.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/clock.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="payroll" extends="altech.base">
+		<put-attribute name="title" value="AMS Payroll."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/payroll.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="hollidays" extends="altech.base">
+		<put-attribute name="title" value="AMS Holidays."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/hollidays.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="msg" extends="altech.base">
+		<put-attribute name="title" value="AMS Messages."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/msg.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="login" extends="altech.base">
+		<put-attribute name="title" value="AMS Login page."></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/login.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="loggedout" extends="altech.base">
+		<put-attribute name="title" value="AMS Logout page."></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/loggedout.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/loggedout.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="denied" extends="altech.base">
+		<put-attribute name="title" value="AMS Access denied."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/denied.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/denied.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="error" extends="altech.base">
+		<put-attribute name="title" value="AMS Database Error."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/error.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/error.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="amsmsgcreated" extends="altech.base">
+		<put-attribute name="title" value="AMS Message sent."></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/amsmsgcreated.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/amsMessageCreated.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="usercreated" extends="altech.base">
+		<put-attribute name="title" value="AMS User created."></put-attribute>
+		<put-attribute name="content" value="usercreated.content"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/user.css" />
+			<add-attribute value="/src/css/userCreated.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="userupdated" extends="altech.base">
+		<put-attribute name="title" value="AMS User updated."></put-attribute>
+		<put-attribute name="content" value="userupdated.content"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/user.css" />
+			<add-attribute value="/src/css/userCreated.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="users" extends="altech.base">
+		<put-attribute name="title" value="AMS Users."></put-attribute>
+		<put-attribute name="content" value="users.content"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/user.css" />
+			<add-attribute value="/src/css/users.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="create" extends="altech.base">
+		<put-attribute name="title" value="AMS Create new user."></put-attribute>
+		<put-attribute name="content" value="create.content"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/user.css" />
+			<add-attribute value="/src/css/newUser.css" />
+			<add-attribute value="/src/css/modal.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="edituserform" extends="altech.base">
+		<put-attribute name="title" value="AMS Edit user."></put-attribute>
+		<put-attribute name="content" value="edituserform.content"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/user.css" />
+			<add-attribute value="/src/css/edituser.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="userinfo" extends="altech.base">
+		<put-attribute name="title" value="AMS User Info."></put-attribute>
+		<put-attribute name="content" value="userinfo.content"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/user.css" />
+			<add-attribute value="/src/css/userinfo.css" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="showmsgs" extends="altech.base">
+		<put-attribute name="title" value="AMS Show ASM messages."></put-attribute>
+		<put-attribute name="content" value="showmsgs.content"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/src/css/normalize.css" />
+			<add-attribute value="/src/css/main.css" />
+			<add-attribute value="/src/css/user.css" />
+			<add-attribute value="/src/css/showmsgs.css" />
+		</put-list-attribute>
+	</definition>
+</tiles-definitions>

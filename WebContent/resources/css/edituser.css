@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+#editUserSection{
+	
+}
+
+#frmEditUser{
+	border: 1px solid #cccccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.lbledit{
+	display: inline-block;
+	width: 150px;
+	font: normal 14px verdana;
+	color: #2D2C2C;
+	margin: 0 0 5px 0;
+}
+
+.txtedit{
+	display: inline-block;
+	width: 180px;
+	border: 1px solid #2D2C2C;
+	height: 20px;
+	padding: 0 5px;
+	font: bolder 14px calibri;
+	color: #9E6060;
+	margin: 0 0 5px 0;
+}
+
+#frmBtns{
+	border: 0px solid #aaaaaa;
+	padding: 10px;
+}
+
+#btnEditUser{
+	width: 120px;
+}

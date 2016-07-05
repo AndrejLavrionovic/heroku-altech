@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<security:authentication-manager>
+		<security:authentication-provider>
+			<security:jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="SELECT username, password, enabled FROM users WHERE username = ?"
+				authorities-by-username-query="select username, authority from users where username = ?" />
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+
+	<security:http use-expressions="true" jaas-api-provision="false">
+		<security:intercept-url pattern="/getusers" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/create" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/showmsgs" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/users" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/docreate" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/doupdateuser" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/edituser" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/deleteuser" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/userinfo" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/edituserform" access="hasAnyRole('hr', 'admin')" />
+		<security:intercept-url pattern="/clock" access="isAuthenticated()" />
+		<security:intercept-url pattern="/hollidays" access="hasAnyRole('man', 'admin')" />
+		<security:intercept-url pattern="/msg" access="hasAnyRole('man', 'admin')" />
+		<security:intercept-url pattern="/payroll" access="isAuthenticated()" />
+		<security:intercept-url pattern="/createamsmsg" access="isAuthenticated()" />
+		<security:intercept-url pattern="/" access="permitAll" />
+		<security:intercept-url pattern="/denied" access="permitAll" />
+		<security:intercept-url pattern="/loggedout" access="permitAll" />
+		<security:intercept-url pattern="/error" access="permitAll" />
+		<security:intercept-url pattern="/usercreated" access="permitAll" />
+		<security:intercept-url pattern="/userupdated" access="permitAll" />
+		<security:intercept-url pattern="/amssent" access="permitAll" />
+		<security:intercept-url pattern="/amsmsgcreated" access="permitAll" />
+		<security:intercept-url pattern="/login" access="permitAll" />
+		<security:intercept-url pattern="/src/**" access="permitAll" />
+		<security:intercept-url pattern="/**" access="denyAll" />
+		<security:form-login login-page="/login" authentication-failure-url="/login?error=true" />
+		<security:logout logout-success-url="/loggedout" />
+		<security:access-denied-handler error-page="/denied" />
+	</security:http>
+</beans>

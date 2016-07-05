@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+
+/*****************************************************************
+/// PERSONAL USER INFO BLOCK
+*****************************************************************/
+#userInfoBlock{
+	
+}
+
+#blcUserPersonalInformation{
+	border: 1px solid #a5a5a5;
+}
+
+#hdrPersonalInfo{
+	font: bold 16px verdana;
+	margin-bottom:20px;
+	background-color: #a5a5a5;
+	padding-left: 10px;
+	height: 25px;
+}
+
+#secPersonalInfo{
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.btmMngUsers{
+	display: inline-block;
+	height: 20px;
+	width: 150px;
+	padding: 0 10px;
+	border: 1px solid #303030;
+	background-color: #e6e6e6;
+	font: normal 14px calibri;
+	color: #FF4507;
+}
+
+#ftrPersonalInfo{
+	
+	margin: 0 0 20px 10px;
+}
+
+#ftrPersonalInfo a{
+	text-decoration: none;
+}
+
+/*****************************************************************
+/// PERSONAL USER INFO TABLE
+*****************************************************************/
+table .infoname{
+	width: 200px;
+}
+
+table .infovalue{
+	border: 0px solid red;
+	width: 300px;
+}

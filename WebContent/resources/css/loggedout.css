@@ -1,0 +1,23 @@
+@CHARSET "utf-8";
+
+#msgblock{
+	width: 400px;
+	border: 1px solid #606060;
+	margin: 100px auto;
+	border-radius: 3px;
+	background-color: #DCF4DC;
+	padding: 20px;
+}
+
+#hloggedout{
+	font: bold 16px arial;
+	color: #303030;
+	margin-bottom: 10px;
+}
+
+#loggedoutNote p{
+	
+	font: normal 18px calibri;
+	color: #10003D;
+	padding: 5px 0 10px 0;
+}

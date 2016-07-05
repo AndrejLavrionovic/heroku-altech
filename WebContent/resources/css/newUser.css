@@ -1,0 +1,172 @@
+@CHARSET "utf-8";
+
+#newUserSection{
+	
+}
+
+#pageTitle{
+	font: normal 22px verdana;
+	color: #303030;
+	font-style: oblique;
+}
+
+#frmUser{
+	border: 1px solid #cccccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#frmAddress{
+	border: 1px solid #cccccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#login{
+	border: 1px solid #FFC477;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#frmBtns{
+	border: 0px solid #aaaaaa;
+	padding: 10px;
+}
+
+.buttons{
+	width: 120px;
+}
+
+.lblNew{
+	display: inline-block;
+	width: 150px;
+	font: normal 16px verdana;
+	color: #2D2C2C;
+	margin: 0 0 5px 0;
+}
+
+.lblTops{
+	font: normal 13px verdana;
+	color: #909090;
+}
+
+.txtNew{
+	display: inline-block;
+	border: 1px solid #606060;
+	border-radius: 3px;
+	height: 30px;
+	padding: 0 10px;
+	font: bolder 14px calibri;
+	color: #303030;
+	margin-bottom: 5px;
+}
+
+.txtError{
+	border:1px solid red;
+	background-color: #FFE0DD;
+}
+
+.error{
+	border: 1px solid #FF2600;
+	padding: 10px;
+	margin: 20px 0;
+	color: red;
+	font: normal 16px calibri;
+}
+
+#divError{
+	border: 0px solid #909090;
+	width: 214px;
+	height: 0px;
+	display: inline-block;
+}
+
+/********************************/
+/*:::::::::NAME SECTION::::::::::*/
+#nameBlock{
+	border: 0px solid #606060;
+}
+#nameBlock div{
+	display: inline-block;
+	border: 0px solid red;
+}
+#lblNameBlock{
+	width: 150px;
+}
+#txtFirstnameBlock, #txtLastnameBlock{
+	width: 190px;
+}
+#txtFirstname, #txtLastname{
+	width: 160px;
+}
+
+/********************************/
+/*:::::::::DOB SECTION::::::::::*/
+#blockDob{
+	height: 32px;
+	border: 0px solid #666666;
+	margin-bottom: 5px;
+}
+
+#inDatePicker, #inDatePicker.selNew{
+	display: inline-block;
+}
+
+.selNew option{
+	display: block;
+	padding-left: 10px;
+	color: #303030;
+	font: normal 14px verdana;
+}
+
+.selNew{
+	padding: 0 10px;
+	height: 30px;
+	border: 1px solid #606060;
+	border-radius: 2px;
+	font: bolder 14px calibri;
+}
+
+.selError{
+	border:1px solid red;
+	background-color: #FFE0DD;
+}
+
+select#pickMonth{
+	width: 150px;
+}
+
+select#pickDay{
+	width: 60px;
+}
+
+select#pickYear{
+	width: 100px;
+}
+
+/****************************************/
+/*:::::::::TEL + EMAIL SECTION::::::::::*/
+#contactsBlock{
+	border: 0px solid #606060;
+	margin: 20px 0 30px 0;
+}
+#contactsBlock div{
+	display: inline-block;
+	border: 0px solid red;
+}
+#txtTelBlock{
+	width: 190px;
+}
+#txtEmailBlock{
+	width: 200px;
+}
+#selTelPrefix{
+	width: 80px
+}
+#txtTel{
+	width: 80px;
+}
+#txtEmail{
+	width: 170px;
+}
+

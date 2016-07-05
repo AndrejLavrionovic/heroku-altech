@@ -1,0 +1,173 @@
+@CHARSET "utf-8";
+
+body{
+	background-color: #FBFBEF;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -chrome-box;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	width: 100%;
+}
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+div, section, article, header, footer, nav
+{
+	display: block;
+}
+
+#container{
+    max-width: 800px;
+    min-height: 600px;
+    margin: 0 auto;
+    border-radius: 6px;
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-flex: 0;
+    -webkit-box-flex: 0;
+}
+
+#hd{
+    height: 164px;
+    text-align: center;
+}
+#nav{
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered;
+    width: 800px;
+    padding: 5px 0;
+}
+#nav ul li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    width: 120px;
+    height: 12px;
+    padding: 2px 0 10px 0;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#nav ul li a, #nav ul le a:active{
+    text-decoration: none;
+    color: mediumvioletred;
+    font: normal 12px verdana;
+    
+}
+#mainsection{
+    width: 778px;
+    margin: 4px auto;
+    height: auto;
+    border: 1px solid darkslategray;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#hdrTitle{
+	font: bolder 15px arial;
+	color: #2D2C2C;
+	margin-bottom: 20px;
+}
+
+#hdrParagraph{
+	font: normal 12px verdana;
+	color: #303030;
+	display: block;
+	padding-left: 10px;
+	border-left: 8px solid #909090;
+	margin: 20px 0 50px 0;
+}
+
+#mainFooter{
+	clear: both;
+	padding: 40px 20px;
+	border: 0px solid red;
+	background-color: #404160;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+#ftrRights, #ftrAddress{
+	float: left;
+	/*display: inline-block;*/
+	border: 0px solid gray;
+}
+
+#ftrRights, #ftrAddress p{
+	font: normal 14px calibri;
+	color: #F2F2F2;
+}
+
+#ftrRights{
+	margin: 0 200px 0 0;
+}
+
+#address p{
+	font: normal 12px calibri;
+	color: #F2F2F2;
+	margin: 0 0 0 20px;
+}
+
+
+/*************************************************************
+TIME BAR
+**************************************************************/
+/****Logout Button****/
+#timebar{
+	border: 0px solid #909090;
+	text-align: left;
+	background-color: #FFF6E0;
+	margin-top: 5px;
+}
+
+#datetime{
+	display: inline-block;
+	border: 0px solid #909090;
+	font: normal 14px verdana;
+	color: #170056;
+	padding-left: 5px;
+}
+
+#blockLogin{
+	display: inline-block;
+	border: 0px solid #606060;
+	height: 20px;
+	margin: 5px 50px 0 0;
+	padding: 0 0 0 20px;
+}
+
+#blockLogin span{
+	display: inline-block;
+	padding: 0 5px 0 20px;
+	font: bolder 13px verdana;
+	color: #362B54;
+}
+
+#blockLogin a, #blockLogin a:ACTIVE, #blockLogin a:HOVER, #blockLogin a:VISITED, #blockLogin a:LINK{
+	text-decoration: none;
+	font: normal 14px verdana;
+	color: #0094FF;
+}
+
+#blockLogout{
+	display: inline-block;
+	margin-right: 50px;
+	padding: 5px;
+}
+
+#blockWelcome{
+	display: inline-block;
+	padding: 0 5px 0 20px;
+	font: bolder 13px verdana;
+	color: #362B54;
+}
+
+#blockLogout input{
+	width: 80px;
+}

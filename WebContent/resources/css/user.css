@@ -1,0 +1,50 @@
+@CHARSET "utf-8";
+
+
+#wrapper{
+	border: 0px solid black;
+	width: 800px;
+	display: -moz-box;
+	display: -webkit-box;
+	-moz-box-orient: horizontal;
+	-webkit-box-orient: horizontal;
+	margin-bottom: 4px;
+}
+
+#mainAside{
+	width: *;
+	padding: 20px;
+	background: #E2E2E2;
+	margin: 5px 5px 0 0;
+	padding: 10px;
+	box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+}
+
+#mainSection{
+	width: 611px;
+	border: 1px solid #c0c0c0;
+	porder-radius: 4px;
+	margin: 5px 0 0 5px;
+	padding: 10px;
+	min-height: 400px;
+}
+
+.sideNav{
+	display: block;
+	height: 24px;
+	margin-top: 5px;
+	width: 120px;
+	list-style: none;
+	font-family: verdana;
+	font-size: 13px;
+	background-color: #404040;
+	text-align: center;
+}
+
+.sideNav a:active, .sideNav a:hover, .sideNav a{
+	color: #EFE6E6;
+	text-decoration: none;
+	line-height: 20px;
+}
